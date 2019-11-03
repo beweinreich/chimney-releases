@@ -26,9 +26,9 @@
     "appId": "com.madebybread.chimney-desktop",
     "mac": {
       "type": "distribution",
+      "identity": "Brian Weinreich",
       "provisioningProfile": "/Users/bw/Webstuff/chimney/desktop-builder/Chimney_Desktop__Distribution.provisionprofile",
-      
-      "app-bundle-id": "com.madebybread.chimney-desktop",
+      "appId": "com.madebybread.chimney-desktop",
       "type": "distribution",
       "category": "public.app-category.Productivity",
       "target": [
