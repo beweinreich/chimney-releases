@@ -1,9 +1,9 @@
 {
-  "name": "electron-updater-example",
+  "name": "chimney",
   "version": "0.7.1",
   "main": "main.js",
-  "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "description": "Chimney releases",
+  "author": "Brian Weinreich",
   "scripts": {
     "publish": "build -p always"
   },
@@ -16,9 +16,16 @@
     "electron-updater": "^4.0.6"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "beweinreich",
+        "repo": "chimney-releases"
+      }
+    ],
+    "appId": "com.madebybread.chimney-desktop",
     "mac": {
-      "category": "your.app.category.type",
+      "category": "public.app-category.Productivity",
       "target": [
         "zip",
         "dmg"
