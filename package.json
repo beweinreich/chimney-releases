@@ -34,8 +34,7 @@
       "type": "distribution",
       "category": "public.app-category.Productivity",
       "target": [
-        "mas",
-        "dmg"
+        "mas"
       ]
     }
   }

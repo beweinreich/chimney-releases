@@ -1,6 +1,19 @@
-## Chimney Releases
+# Chimney Releases
 
-Based on https://github.com/iffy/electron-updater-example
+## Brian: Couple notes:
+
+- Based on https://github.com/iffy/electron-updater-example
+- zip files on Mac are fucked with Catalina, so do this: https://snippets.cacher.io/snippet/354a3eb7b0dcbe711383
+
+## How to build and upload release...
+
+- update version in package.json
+- npm run build
+- zip files on Mac are fucked with Catalina, so do this: https://snippets.cacher.io/snippet/354a3eb7b0dcbe711383
+- Go to github and create a release, upload the zip file and latest-mac.yml (and whatever else you want)
+
+
+## Previously on electron-updater-example...
 
 This repo contains the **bare minimum code** to have an auto-updating Electron app using [`electron-updater`](https://github.com/electron-userland/electron-builder/tree/master/packages/electron-updater) with releases stored on GitHub.
 
