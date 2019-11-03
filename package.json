@@ -1,10 +1,11 @@
 {
   "name": "chimney",
-  "version": "0.7.2",
+  "version": "0.7.5",
   "main": "main.js",
   "description": "Chimney releases",
   "author": "Brian Weinreich",
   "scripts": {
+    "build": "electron-builder -p never",
     "publish": "electron-builder -p always"
   },
   "devDependencies": {
@@ -26,13 +27,15 @@
     "appId": "com.madebybread.chimney-desktop",
     "mac": {
       "type": "distribution",
-      "identity": "Brian Weinreich",
-      "provisioningProfile": "/Users/bw/Webstuff/chimney/desktop-builder/Chimney_Desktop__Distribution.provisionprofile",
+      "identity": "THE UNSUNG LLC",
+      "cscInstallerLink": "/Users/bw/Desktop/installer.p12",
+      "cscInstallerKeyPassword": "cool",
       "appId": "com.madebybread.chimney-desktop",
       "type": "distribution",
       "category": "public.app-category.Productivity",
       "target": [
-        "zip"
+        "mas",
+        "dmg"
       ]
     }
   }
